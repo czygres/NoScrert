@@ -1,0 +1,44 @@
+{
+    "log": {
+        "loglevel": "warning"
+    },
+    "inbounds": [
+        {
+            "port": 8088,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "7146a1cb-c231-4d07-a1b2-448a631f53ca"
+                    }
+                ],
+                "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none"
+            }
+        },
+        {
+            "port": 8088,
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "7146a1cb-c231-4d07-a1b2-448a631f53ca"
+                    }
+                ],
+                "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none"
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom"
+        }
+    ]
+}
